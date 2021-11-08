@@ -1,0 +1,18 @@
+.eachCharacter{
+  display: grid;
+  justify-content: center;  
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;  
+}
+
+.characterPic{
+  width: 200px;
+  height: 300px;  
+  display: flex;  
+  place-self: center;
+  border-radius: 50%;
+}
+
+.bioData{
+  text-align: left;
+}

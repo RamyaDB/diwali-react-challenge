@@ -1,0 +1,183 @@
+.wheelComp{
+  position: relative;
+}
+
+.circle{
+  list-style-type: none;
+  width: 35em;
+  height: 35em;
+  border: 1px solid black;
+  position: relative;
+  padding: 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  overflow: hidden;
+
+  li{
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    right:0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+  }
+
+  li:nth-child(3n+1) .text{
+    background-color: aqua;  
+  }
+  
+  li:nth-child(3n+2) .text{
+    background-color: darksalmon; 
+  }
+  
+  li:nth-child(3n+3) .text{
+    background-color: yellow;  
+  }
+  
+  li:first-child{
+    transform: rotate(0deg) skewY(-75deg);
+  }
+  li:nth-child(2){
+    transform: rotate(15deg) skewY(-75deg);
+  }
+  li:nth-child(3){
+    transform: rotate(30deg) skewY(-75deg);
+  }
+  li:nth-child(4){
+    transform: rotate(45deg) skewY(-75deg);
+  }
+  li:nth-child(5){
+    transform: rotate(60deg) skewY(-75deg);
+  }
+  li:nth-child(6){
+    transform: rotate(75deg) skewY(-75deg);
+  }
+  li:nth-child(7){
+    transform: rotate(90deg) skewY(-75deg);
+  }
+  li:nth-child(8){
+    transform: rotate(105deg) skewY(-75deg);
+  }
+  li:nth-child(9){
+    transform: rotate(120deg) skewY(-75deg);
+  }
+  li:nth-child(10){
+    transform: rotate(135deg) skewY(-75deg);
+  }
+  li:nth-child(11){
+    transform: rotate(150deg) skewY(-75deg);
+  }
+  li:nth-child(12){
+    transform: rotate(165deg) skewY(-75deg);
+  }
+  li:nth-child(13){
+    transform: rotate(180deg) skewY(-75deg);
+  }
+  li:nth-child(14){
+    transform: rotate(195deg) skewY(-75deg);
+  }
+  li:nth-child(15){
+    transform: rotate(210deg) skewY(-75deg);
+  }
+  li:nth-child(16){
+    transform: rotate(225deg) skewY(-75deg);
+  }
+  li:nth-child(17){
+    transform: rotate(240deg) skewY(-75deg);
+  }
+  li:nth-child(18){
+    transform: rotate(255deg) skewY(-75deg);
+  }
+  li:nth-child(19){
+    transform: rotate(270deg) skewY(-75deg);
+  }
+  li:nth-child(20){
+    transform: rotate(285deg) skewY(-75deg);
+  }
+  li:nth-child(21){
+    transform: rotate(300deg) skewY(-75deg);
+  }
+  li:nth-child(22){
+    transform: rotate(315deg) skewY(-75deg);
+  }
+  li:nth-child(23){
+    transform: rotate(330deg) skewY(-75deg);
+  }
+  li:nth-child(24){
+    transform: rotate(345deg) skewY(-75deg);
+  }
+}
+
+.text{
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  display: block;
+  transform: skewY(75deg) rotate(13deg);
+  padding-top: 20px;  
+  cursor: pointer;
+  // font-weight: bold;
+  // font-size: 18px;
+}
+
+
+
+.arrow{
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 50px solid red;
+  position: absolute;
+  left: 50%;
+  top : -20px;
+  z-index: 1;
+}
+.spinButton {
+  position: absolute;
+  left: 45%;
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  border-width: 0;
+}
+
+.startRotate{
+  animation: startRotate 1s linear infinite;
+}
+@keyframes startRotate {
+  100% {
+    transform: rotate(375deg);
+  }
+}
+.stopRotate{
+  animation-play-state: paused;
+}
+// li:first-child {
+//   transform: rotate(10deg);
+// }
+
+// li:nth-child(n+1) {
+//   transform: rotate((15+var(--n))deg);
+// }
+
+// li:nth-child(2) {
+//   transform: rotate(15deg);
+// }
+// $base-color: #036;
+// @for $i from 1 through 3 {
+//   @debug #{$i};
+//   li:nth-child(n + #{$i}) {
+//     // background-color: lighten($base-color, $i * 5%);
+//     transform: rotate(($i * 15) deg);
+//   }
+// }
