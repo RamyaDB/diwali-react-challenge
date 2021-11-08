@@ -37,6 +37,10 @@
 
 .main {
   color: $color-black;
+  background-image: url('../../assets/images/10951522.jpg');  
+  // object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   
 
   & > * {
@@ -88,7 +92,7 @@
     }
 
     .wheel {
-      grid-row: 2/3;
+      grid-row: 1/2;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -98,7 +102,7 @@
 
       &__heading {
         padding: 0;
-        color: white;
+        // color: bl;
       }
     }
     .characterInfo {
@@ -109,10 +113,21 @@
       align-items: center;
       // border: 2px solid white;
       color: white;
+      background-color: deepskyblue;
+      // margin: 0;
+      // padding: 0;
 
       &__heading {
         padding: 0;
         // color: white;
+      }
+      &__button{
+        background-color:yellow;
+        width: 200px;
+        height: 50px;
+        border-radius: 50px;
+        border-width: 0;
+        margin-bottom: 20px;
       }
     }
     

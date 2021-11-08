@@ -6,13 +6,13 @@ const Character = (props) => {
   
   return (
     <div className="eachCharacter">
-      <img src={image} alt="Large Picture" className="characterPic"/>
+      <img src={image} alt="Picture" className="characterPic"/>
       <section className="bioData">
         <h1>Name: {name}</h1>  
         {house && <h1>House: {house}</h1>}
         <h1>Actor: {actor}</h1> 
         {dateOfBirth && <h1>Date of Birth: {dateOfBirth}</h1>}
-        {wand.length >2 && <h1>Wand: {wand.core}, {wand.wood} </h1>  }  
+        {wand.core && wand.wood && <h1>Wand: {wand.core}, {wand.wood} </h1> }  
       </section>
     </div>
     

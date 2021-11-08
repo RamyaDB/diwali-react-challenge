@@ -162,22 +162,3 @@
 .stopRotate{
   animation-play-state: paused;
 }
-// li:first-child {
-//   transform: rotate(10deg);
-// }
-
-// li:nth-child(n+1) {
-//   transform: rotate((15+var(--n))deg);
-// }
-
-// li:nth-child(2) {
-//   transform: rotate(15deg);
-// }
-// $base-color: #036;
-// @for $i from 1 through 3 {
-//   @debug #{$i};
-//   li:nth-child(n + #{$i}) {
-//     // background-color: lighten($base-color, $i * 5%);
-//     transform: rotate(($i * 15) deg);
-//   }
-// }

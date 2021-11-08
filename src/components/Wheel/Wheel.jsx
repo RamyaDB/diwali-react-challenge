@@ -5,7 +5,7 @@ const Wheel = (props) => {
 
   const {filteredCharacters} = props;
   const [ wheelClass, setWheelClass] = useState("circle");
-  const [selectedItem, setSelectedItem] = useState(null);
+  // const [selectedItem, setSelectedItem] = useState(null);
 
 
   const startRotation = () => {
@@ -23,15 +23,11 @@ const Wheel = (props) => {
     <div className="wheelComp">
       <div className="arrow"></div>
       <ul className={wheelClass} onWheel={handleWheelStop}>
-      {filteredCharacters.map((eachChar, index) => (        
-        <li key={index}>
-          <div key={index} className="text" >{eachChar.name}</div>
-        </li>        
-      ))}
-      
-      {/* {characters && Array.from(document.querySelectorAll(".text")).map(item => item.style.transform = 'rotate(20deg)')} */}
-      {/* style={{transform: [{ rotate: '180deg' }]}} */}
-      
+        {filteredCharacters.map((eachChar, index) => (        
+          <li key={index}>
+            <div key={index} className="text" >{eachChar.name}</div>
+          </li>        
+        ))} 
       </ul>
       <button className="spinButton" onClick={startRotation}>SPIN</button>
     </div>

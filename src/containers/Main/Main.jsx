@@ -31,7 +31,7 @@ const Main = (props) => {
         </section>
         <section className="characterInfo">
           <h2 className="characterInfo__heading">Find about each character</h2>
-          <button onClick={handleChangeCharacter}>Change character</button>     
+          <button onClick={handleChangeCharacter} className="characterInfo__button">Change character</button>     
           {characters && <Character data={filteredCharacters[changeCharacter]}/>}
         </section>
         
