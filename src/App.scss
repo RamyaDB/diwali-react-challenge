@@ -1,0 +1,23 @@
+// .app{
+//   // background-image: url('./assets/images/10951522.jpg');
+//   // // object-fit: contain;
+//   // background-repeat: no-repeat;
+//   // background-size: contain;
+//   // height: 100vh;
+
+  
+  
+// }
+
+@use "./assets/sass/_variables.scss" as *;
+
+.app {
+  color: $color-black;
+}
+
+@media (min-width: 992px) {
+  .app {
+    // max-width: 1200px;
+    margin: 0 auto;
+  }
+}
