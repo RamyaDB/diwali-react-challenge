@@ -1,3 +1,25 @@
+# Wizarding World
+Fetch the Harry Potter characters data from api - "http://hp-api.herokuapp.com/api/characters (Harry Potter characters)". 
+The page consists of a Navigation bar and a container as 'Main'.
+
+**Nav bar**- consists of Menu icon, Wizarding world icon and Login button.  
+**Login button** - Gives an option to fill the user details like first name, last name and preferred house option.
+This house option list is rendered directly from the fetched data from API.
+Once tthe user clicks on the **'Save'** button, user details will be saved and displayed iin the Nav bar.
+And there will be an option to **Signout**.
+
+**Gallery** - In the Main Section after the Nav bar, a gallery of images will be displayed from wizarding world.
+
+# Spinning Wheel
+
+**Find out your favourite Character** - A wheel is displayed with the rendered characters names from API fetch.  
+Once the user clicks on the **'Spin'** button, the wheel spins and stops after a certain interval and points the arrow to a particular character.
+
+# Find about each character
+
+**Change Character** - If the user clicks on this button, each character data will be rendered from API fetch.  
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
