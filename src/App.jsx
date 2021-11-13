@@ -11,7 +11,7 @@ const App = () => {
   
 
   useEffect( () => {
-    fetch("http://hp-api.herokuapp.com/api/characters")
+    fetch("https://hp-api.herokuapp.com/api/characters")
       .then(res => res.json())
       .then(jsonData => setCharacters(jsonData))
   }, [])
